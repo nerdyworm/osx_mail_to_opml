@@ -45,5 +45,3 @@ x.opml {
     feeds.each { |f|  feed_t_xml(f, x) }
   }
 }
-
-
