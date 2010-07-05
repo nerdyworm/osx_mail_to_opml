@@ -42,9 +42,7 @@ x = Builder::XmlMarkup.new(:target => $stdout, :indent => 1)
 x.instruct!
 x.opml {
   x.body {
-    feeds.each do |f|
-      feed_t_xml(f, x)
-    end
+    feeds.each { |f|  feed_t_xml(f, x) }
   }
 }
 
